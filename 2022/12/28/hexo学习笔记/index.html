@@ -86,10 +86,18 @@
 <meta property="og:site_name" content="Hexo学习日记">
 <meta property="og:description" content="Linux学习笔记 Linux 就是一个操作系统，就像你多少已经了解的 Windows（xp，7，8）和 Mac OS 。我们的 Linux 主要是系统调用和内核那两层。当然直观地看，我们使用的操作系统还包含一些在其上运行的应用程序，比如文本编辑器、浏览器、电子邮件等。在 UNIX&#x2F;Linux 中比较流行的常见的 Shell 有 bash、zsh、ksh、csh 等等，Ubuntu 终端">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-12-28T04:31:36.496Z">
-<meta property="article:modified_time" content="2022-12-28T04:31:36.508Z">
+<meta property="og:image" content="http://example.com/pic/1.png">
+<meta property="og:image" content="http://example.com/pic/2.png">
+<meta property="og:image" content="http://example.com/pic/3.png">
+<meta property="og:image" content="http://example.com/pic/4.png">
+<meta property="og:image" content="http://example.com/pic/5.png">
+<meta property="og:image" content="http://example.com/pic/6.png">
+<meta property="og:image" content="http://example.com/pic/7.png">
+<meta property="article:published_time" content="2022-12-28T05:20:26.698Z">
+<meta property="article:modified_time" content="2022-12-28T05:20:26.698Z">
 <meta property="article:author" content="Erica">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/pic/1.png">
 
 
 
@@ -321,7 +329,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-12-28T12:31:36+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-12-28T13:20:26+08:00">
                 2022-12-28
               </time>
             
@@ -334,6 +342,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/12/28/hexo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/12/28/hexo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -370,10 +388,7 @@
 <li>vim 启动进入普通模式，处于插入模式或命令行模式时只需要按 Esc 或者 Ctrl+[（这个在 vim 课程环境中可能会不管用）即可进入普通模式。普通模式中按 i（插入）或 a（附加）键都可以进入插入模式，普通模式中按 : 进入命令行模式。命令行模式中输入 wq 回车后保存并退出 vim。</li>
 <li>Bash（GNU Bourne-Again Shell）是一个为 GNU 计划编写的 Unix shell，它是许多 Linux 平台默认使用的 shell。shell 是一个命令解释器，是介于操作系统内核与用户之间的一个绝缘层。准确地说，它也是能力很强的计算机语言，被称为解释性语言或脚本语言。它可以通过将系统调用、公共程序、工具和编译过的二进制程序”粘合“在一起来建立应用，这是大多数脚本语言的共同特征，所以有时候脚本语言又叫做“胶水语言”。</li>
 </ul>
-<h1 id="Linux大作业步骤"><a href="#Linux大作业步骤" class="headerlink" title="Linux大作业步骤"></a>Linux大作业步骤</h1><ol>
-<li></li>
-<li></li>
-</ol>
+<h1 id="Linux大作业步骤"><a href="#Linux大作业步骤" class="headerlink" title="Linux大作业步骤"></a>Linux大作业步骤</h1><p>1.安装hexo<br><img src="/pic/1.png" alt="1"><br>2.配置github<br><img src="/pic/2.png" alt="2"><br>3.部署到github<br><img src="/pic/3.png" alt="3"><br><img src="/pic/4.png" alt="4"><br>4.写作<br><img src="/pic/5.png" alt="5"><br><img src="/pic/6.png" alt="6"><br>5.个性化主题<br><img src="/pic/7.png" alt="7"></p>
 
       
     </div>
@@ -722,6 +737,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'SdUH1ebsVOzJhwnN8Qraevun-gzGzoHsz',
+        appKey: 'H21qzeXIiGoXx24mQqKi3fFS',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
